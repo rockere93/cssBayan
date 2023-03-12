@@ -1,0 +1,48 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.mainContainer {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.memContainer {
+    width: 100%;
+}
+
+.memContainer:hover {
+    cursor: pointer;
+}
+
+.memContainer:hover > label > .memImage {
+    display: block;
+}
+
+.memImage {
+    width: 30%;
+    margin: 0, auto;
+    display: none;
+
+}
+
+input {
+    display: none;    
+}
+
+
+input:checked + label > .memImage {
+    display: block;
+}
+
+.memHead {
+    display: flex;
+    justify-content:space-between;
+}
+
+.memContainer > label {
+    display: block;
+    cursor: pointer;
+}
