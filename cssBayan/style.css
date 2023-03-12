@@ -7,6 +7,9 @@ body {
 .mainContainer {
     width: 40vw;
     margin: 0 auto;
+    color:rgb(99, 99, 99);
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 .memContainer {
@@ -15,6 +18,7 @@ body {
 
 .memContainer:hover {
     cursor: pointer;
+    color: black;
 }
 
 .memContainer:active {
@@ -28,7 +32,7 @@ body {
 .memContainer:hover>label .memImage {
     transition-property: width;
     transition-duration: 1s;
-    width: 100%;
+    width: 80%;
 }
 
 .imgWrapper {
@@ -51,8 +55,12 @@ input:checked+label>.imgWrapper {
 }
 
 input:checked+label .memImage {
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
+}
+
+input:checked+label .memHead {
+    color: black;
 }
 
 .memHead {
@@ -63,8 +71,10 @@ input:checked+label .memImage {
 
 .icon {
     display: none;
+    flex: none;
     width: 1em;
     height: 1em;
+    margin-left: 1em;
     background: url(img/icon.png) no-repeat;
     background-size: contain;
     transform: rotate(-90deg);
