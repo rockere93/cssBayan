@@ -28,6 +28,13 @@ body {
 
 .memContainer {
     width: 100%;
+    border-bottom: 0.1em solid black;
+    margin-bottom: 1em;
+}
+
+.memContainer:first-child {
+    border-top: 0.1em solid black;
+    padding-top: 1em;
 }
 
 .memContainer:hover {
