@@ -5,7 +5,7 @@ body {
 }
 
 .mainContainer {
-    width: 80vw;
+    width: 40vw;
     margin: 0 auto;
 }
 
@@ -17,32 +17,58 @@ body {
     cursor: pointer;
 }
 
-.memContainer:hover > label > .memImage {
+.memContainer:hover>label>.imgWrapper {
     display: block;
 }
 
-.memImage {
-    width: 30%;
-    margin: 0, auto;
+.imgWrapper {
     display: none;
+    width: 30%;
+    margin: 0 auto;
+}
 
+.memImage {
+    width: 100%;
+    margin: 0, auto;
 }
 
 input {
-    display: none;    
+    display: none;
 }
 
 
-input:checked + label > .memImage {
+input:checked+label>.imgWrapper {
     display: block;
 }
 
 .memHead {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.memContainer > label {
+.icon {
+    display: none;
+    width: 1em;
+    height: 1em;
+    background: url(img/icon.png) no-repeat;
+    background-size: contain;
+    transform: rotate(-90deg);
+
+}
+
+.mainContainer:hover .icon {
+    display: block;
+}
+
+input:checked .icon,
+.memContainer:hover .icon {
+    display: block;
+    transform: rotate(0deg);
+}
+
+
+.memContainer>label {
     display: block;
     cursor: pointer;
 }
